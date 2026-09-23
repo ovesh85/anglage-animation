@@ -1,0 +1,381 @@
+{
+  "meta": {
+    "title": "ANGLAGE 01, the watch you are allowed to look inside",
+    "description": "An open worked, hand finished, white gold wristwatch. Forty a year, sold direct from the bench. No dealer, no markup, and nothing hidden behind a steel back.",
+    "ogDescription": "Open worked, hand finished, white gold. Forty a year, sold direct. Nothing hidden.",
+    "themeColor": "#ECEEF1",
+    "deployStep": "Patch ogUrl and ogImage with the live absolute URL before zipping.",
+    "ogUrl": "https://example.com/",
+    "ogImage": "https://example.com/assets/hero-ending.jpg"
+  },
+
+  "brand": {
+    "name": "Anglage",
+    "product": "Anglage 01",
+    "calibre": "Calibre A-100",
+    "kicker": "Anglage 01 &middot; Calibre A-100",
+    "line": "A watch you are allowed to look inside."
+  },
+
+  "assets": {
+    "heroVideo": "assets/hero-scrub.mp4",
+    "heroVideoBytes": 12627681,
+    "heroPoster": "assets/hero-poster.jpg",
+    "heroEnding": "assets/hero-ending.jpg",
+    "turnVideo": "assets/turn.mp4",
+    "turnPoster": "assets/turn-poster.jpg"
+  },
+
+  "scrub": {
+    "heroHeightVh": 1000,
+    "smoothing": 0.16,
+    "loadRampMs": 1100,
+    "opacityDelta": 0.004,
+    "kDelta": 0.008,
+    "watchdogMs": 20000,
+    "posterTimeoutMs": 4000
+  },
+
+  "nav": {
+    "links": [
+      { "label": "The turn", "href": "#turn" },
+      { "label": "The movement", "href": "#movement" },
+      { "label": "The collection", "href": "#collection" },
+      { "label": "Questions", "href": "#questions" }
+    ],
+    "cta": { "label": "Order the 01", "href": "#order" }
+  },
+
+  "hero": {
+    "scrollCue": "Scroll",
+    "bands": [
+      {
+        "range": [0.00, 0.15],
+        "entrance": "drift",
+        "split": "word",
+        "spread": 0.45,
+        "headline": "You cannot buy a watch from a photograph.",
+        "subline": "Diameter tells you nothing. Neither does a studio shot.",
+        "footage": "High overhead. The watch lies on white, turning slowly. The camera begins to fall."
+      },
+      {
+        "range": [0.17, 0.32],
+        "entrance": "approach",
+        "headline": "So we opened ours.",
+        "footage": "Close now. The crystal fills the frame, catching a soft reflection."
+      },
+      {
+        "range": [0.34, 0.49],
+        "entrance": "blur",
+        "headline": "Past the glass.",
+        "footage": "The pass through the sapphire. Refraction, a bloom of light, one beat of blur, then clear."
+      },
+      {
+        "range": [0.51, 0.66],
+        "entrance": "halves",
+        "split": "word",
+        "spread": 0.45,
+        "headline": "One hundred and forty two parts.",
+        "subline": "Every one of them yours to inspect.",
+        "footage": "The case opens. Dial plate lifts, bridges rise, the movement spreads into a suspended array."
+      },
+      {
+        "range": [0.68, 0.82],
+        "entrance": "scatter",
+        "split": "char",
+        "spread": 0.5,
+        "headline": "Nine weeks of finishing.",
+        "subline": "On a movement most brands hide behind a steel back.",
+        "footage": "Deep inside the array. Bridges, gear train and jewels drift past the lens."
+      },
+      {
+        "range": [0.84, 1.00],
+        "entrance": "rise",
+        "split": "word",
+        "spread": 0.35,
+        "ramp": 0.034,
+        "settle": true,
+        "kicker": "Anglage 01 &middot; Calibre A-100",
+        "headline": "Made to be opened.",
+        "subline": "Forty a year. Sold direct. No dealer, no markup.",
+        "cta": [
+          { "label": "Order the 01", "href": "#order", "style": "solid" },
+          { "label": "Turn it over", "href": "#turn", "style": "ghost" }
+        ],
+        "footage": "Every part sweeps back into place. The watch closes and settles at rest."
+      }
+    ]
+  },
+
+  "staticHero": {
+    "kicker": "Anglage 01 &middot; Calibre A-100",
+    "headline": "You cannot buy a watch from a photograph.",
+    "subline": "So we opened ours. One hundred and forty two parts, and not one of them hidden.",
+    "cta": [
+      { "label": "Order the 01", "href": "#order", "style": "solid" },
+      { "label": "See the movement", "href": "#movement", "style": "ghost" }
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "turn",
+      "type": "turn",
+      "panel": true,
+      "kicker": "02 &middot; The turn",
+      "headline": "Turn it over yourself.",
+      "lede": "Most brands show you one angle, lit by someone who was paid to flatter it. Drag the watch. Look at any angle you want, including the back, where the work is.",
+      "hint": "Drag to rotate",
+      "specs": [
+        { "label": "Reference", "value": "01 Ouvert" },
+        { "label": "Case", "value": "White gold, 39.0 mm" },
+        { "label": "Case length", "value": "44.8 mm" },
+        { "label": "Thickness", "value": "8.9 mm" },
+        { "label": "Calibre", "value": "A-100, hand wound" },
+        { "label": "Reserve", "value": "72 hours" },
+        { "label": "Balance", "value": "Free sprung" },
+        { "label": "Jewels", "value": "21, gold chatons" },
+        { "label": "This year", "value": "10 pieces" }
+      ]
+    },
+    {
+      "id": "numbers",
+      "type": "numbers",
+      "panel": false,
+      "kicker": "03 &middot; The numbers",
+      "headline": "The three numbers that actually matter.",
+      "lede": "Diameter is the number everyone quotes and the one that tells you least. A 39mm case with long ends can swallow a wrist that a 41mm case sits neatly on. These are the three that decide whether it fits you, and there are no lugs on this case, so the second one is measured top to bottom across the whole case.",
+      "figures": [
+        {
+          "value": 39.0, "decimals": 1, "unit": "mm",
+          "title": "Case diameter",
+          "note": "Quiet on a small wrist. Not lost on a large one."
+        },
+        {
+          "value": 44.8, "decimals": 1, "unit": "mm",
+          "title": "Case length",
+          "note": "This is the number that decides the fit. It does not hang over the edge of a 16cm wrist."
+        },
+        {
+          "value": 8.9, "decimals": 1, "unit": "mm",
+          "title": "Thickness",
+          "note": "It goes under a cuff. That was the brief, and open working a movement usually makes it worse, not better."
+        }
+      ],
+      "drawingAlt": "A technical drawing of the case showing its diameter, its length and its thickness."
+    },
+    {
+      "id": "movement",
+      "type": "movement",
+      "panel": true,
+      "kicker": "04 &middot; Calibre A-100",
+      "headline": "The part you were never meant to see.",
+      "lede": "Hand wound, so there is no rotor covering the architecture. Everything below is visible through the back, every day, for as long as you own it.",
+      "schematicAlt": "A schematic of the A-100 calibre showing the barrel, the gear train, the balance and the twenty one jewels.",
+      "schematicCaption": "CAL. A-100 &middot; 21 JEWELS &middot; 72H",
+      "features": [
+        {
+          "numeral": "i",
+          "title": "Bevels cut by hand.",
+          "body": "A machine can cut an edge. It cannot cut the inside angle where two edges meet. That corner is the tell, and on the A-100 there are fourteen of them.",
+          "image": "assets/f-bevel.jpg",
+          "alt": "A macro of a hand cut bevel running along the polished edge of a movement bridge."
+        },
+        {
+          "numeral": "ii",
+          "title": "Screws blued by heat.",
+          "body": "Held over a flame until the steel turns cobalt on its own. Painted blue is cheaper and it never looks like this.",
+          "image": "assets/f-screws.jpg",
+          "alt": "A macro of cobalt blued screws seated in a circular grained movement plate."
+        },
+        {
+          "numeral": "iii",
+          "title": "Seventy two hours, free sprung.",
+          "body": "Wind it Friday, put it down, pick it up Monday morning still running. No regulating index to drift out of adjustment.",
+          "image": "assets/f-balance.jpg",
+          "alt": "A macro of a free sprung balance wheel with a blued hairspring."
+        }
+      ]
+    },
+    {
+      "id": "collection",
+      "type": "collection",
+      "panel": false,
+      "kicker": "05 &middot; The collection",
+      "headline": "Four references. Forty watches a year.",
+      "lede": "One case, one calibre, four ways of finishing it. The yearly runs are a capacity limit, not a marketing one, and they add up to everything one bench can do.",
+      "specLine": "39.0 / 44.8 / 8.9 mm",
+      "buttonLabel": "Specification",
+      "watches": [
+        {
+          "ref": "Ref 01",
+          "name": "Ouvert",
+          "price": "&pound;24,800",
+          "desc": "No dial at all. The movement is the face, so the finishing is the only decoration, and there is nowhere to hide.",
+          "left": 4, "run": 10,
+          "image": "assets/w-01.jpg",
+          "alt": "The Anglage 01 Ouvert, an open worked white gold watch on an integrated bracelet.",
+          "specs": [
+            { "label": "Dial", "value": "Fully open worked" },
+            { "label": "Case", "value": "White gold" },
+            { "label": "Calibre", "value": "A-100 &middot; 72H" }
+          ]
+        },
+        {
+          "ref": "Ref 02",
+          "name": "Perlage",
+          "price": "&pound;17,400",
+          "desc": "The dial is finished like the bridges underneath it. Same tool, same hand, same afternoon.",
+          "left": 9, "run": 15,
+          "image": "assets/w-02.jpg",
+          "alt": "The Anglage 02 Perlage, a white gold watch with a circular grained silver dial.",
+          "specs": [
+            { "label": "Dial", "value": "German silver, grained" },
+            { "label": "Case", "value": "White gold" },
+            { "label": "Calibre", "value": "A-100 &middot; 72H" }
+          ]
+        },
+        {
+          "ref": "Ref 03",
+          "name": "Bleu Glacier",
+          "price": "&pound;18,200",
+          "desc": "The same blue as the screws underneath. That was not an accident.",
+          "left": 7, "run": 12,
+          "image": "assets/w-03.jpg",
+          "alt": "The Anglage 03 Bleu Glacier, a white gold watch with an ice blue guilloche dial.",
+          "specs": [
+            { "label": "Dial", "value": "Hand cut guilloche" },
+            { "label": "Case", "value": "White gold" },
+            { "label": "Calibre", "value": "A-100 &middot; 72H" }
+          ]
+        },
+        {
+          "ref": "Ref 04",
+          "name": "Platine",
+          "price": "&pound;34,500",
+          "desc": "The 01 in platinum. Ninety grams heavier and you feel every one of them.",
+          "left": 1, "run": 3,
+          "image": "assets/w-04.jpg",
+          "alt": "The Anglage 04 Platine, an open worked platinum watch on an integrated bracelet.",
+          "specs": [
+            { "label": "Dial", "value": "Fully open worked" },
+            { "label": "Case", "value": "Platinum" },
+            { "label": "Calibre", "value": "A-100 &middot; 72H" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maker",
+      "type": "maker",
+      "panel": true,
+      "kicker": "06 &middot; Who makes it",
+      "statement": "One bench. One person. Forty watches a year, and my name is on the return address.",
+      "attribution": "Mathis Roux, founder and watchmaker",
+      "lede": "There is no dealer to mark it up and no showroom rent in the price. You are buying the watch and about four hundred hours of someone's year.",
+      "quotes": [
+        {
+          "text": "I have owned watches that cost three times this. None of them made me turn them over.",
+          "by": "D. Okonkwo &middot; owner, ref 01"
+        },
+        {
+          "text": "It goes under a shirt cuff. I did not think that was still possible at this price.",
+          "by": "S. Lindqvist &middot; owner, ref 02"
+        },
+        {
+          "text": "I asked a question at eleven at night and the person who built it answered.",
+          "by": "R. Mehta &middot; owner, ref 04"
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "type": "questions",
+      "panel": false,
+      "kicker": "07 &middot; The questions",
+      "headline": "The awkward ones.",
+      "items": [
+        {
+          "q": "If there is no dealer, why is it still this much?",
+          "a": "Because the hours are real. An open worked, hand finished, white gold watch from a Geneva house starts around six figures, and most of that gap is the forty percent a retailer takes and the marketing that fills the magazines. None of that is in this price. Four hundred hours of hand work is, and no machine shortens it."
+        },
+        {
+          "q": "What does a service cost?",
+          "a": "&pound;890, every five to seven years, done at this bench, not sent abroad. We publish the number because the service bill is where most of this industry stops being honest. Your first two are included."
+        },
+        {
+          "q": "39mm. Is that too small for me?",
+          "a": "Almost certainly not. Measure your wrist, then look at the case length, which is 44.8mm. If your wrist is 16cm or wider this sits flat with room to spare. If you are unsure, say so in the order note and we will tell you honestly, including when the answer is no."
+        },
+        {
+          "q": "Can I see one before I buy?",
+          "a": "Yes. Ask in the order note and one comes to you for a week, insured, nothing charged. If it goes back, it goes back."
+        },
+        {
+          "q": "What if I do not like it?",
+          "a": "Thirty days, full refund, return postage paid. It is a watch you have to hold. We would rather you held it than argued with a photograph."
+        },
+        {
+          "q": "Is it really only forty?",
+          "a": "Yes, and that is a capacity limit, not a marketing one. One person can finish about forty movements a year at this standard. When the tenth of a reference is gone, it is gone."
+        }
+      ]
+    },
+    {
+      "id": "order",
+      "type": "order",
+      "panel": true,
+      "kicker": "08 &middot; Order",
+      "headline": "Order the 01.",
+      "lede": "Direct from the bench. Thirty day return, first two services included.",
+      "button": "Send the order",
+      "handling": "js-success-state",
+      "fields": [
+        { "id": "n", "name": "name", "label": "Your name", "type": "text", "autocomplete": "name", "required": true, "half": true },
+        { "id": "e", "name": "email", "label": "Email", "type": "email", "autocomplete": "email", "required": true, "half": true },
+        { "id": "r", "name": "reference", "label": "Which reference", "type": "select", "half": true,
+          "options": ["01 Ouvert", "02 Perlage", "03 Bleu Glacier", "04 Platine", "Not sure yet"] },
+        { "id": "w", "name": "wrist", "label": "Wrist measurement, if you know it", "type": "text", "placeholder": "16.5 cm", "half": true },
+        { "id": "q", "name": "note", "label": "Anything you want to ask", "type": "textarea",
+          "placeholder": "Including whether it will fit. We will tell you honestly." }
+      ],
+      "success": {
+        "headline": "That is with the bench.",
+        "body": "Mathis answers these himself, usually within a day. Nothing is charged until you have held the watch."
+      }
+    }
+  ],
+
+  "footer": {
+    "columns": [
+      {
+        "title": "The collection",
+        "links": [
+          { "label": "01 Ouvert", "href": "#collection" },
+          { "label": "02 Perlage", "href": "#collection" },
+          { "label": "03 Bleu Glacier", "href": "#collection" },
+          { "label": "04 Platine", "href": "#collection" }
+        ]
+      },
+      {
+        "title": "The watch",
+        "links": [
+          { "label": "Turn it over", "href": "#turn" },
+          { "label": "The numbers", "href": "#numbers" },
+          { "label": "Calibre A-100", "href": "#movement" },
+          { "label": "Questions", "href": "#questions" }
+        ]
+      },
+      {
+        "title": "Order",
+        "links": [
+          { "label": "Order the 01", "href": "#order" },
+          { "label": "Ask to see one", "href": "#order" }
+        ],
+        "cta": { "label": "Order the 01", "href": "#order" }
+      }
+    ],
+    "disclosure": "ANGLAGE is a fictional brand created as a design demonstration. The watches, the calibre, the people and the prices are invented. Every image and the film were generated with AI.",
+    "copyright": "&copy; 2026"
+  }
+}
