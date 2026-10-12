@@ -236,13 +236,23 @@ a{color:inherit}
 [data-entrance="rise"] .cta{--kb:clamp(0,(var(--k,0) - .74)*4.4,1);opacity:var(--kb);
   transform:translateY(calc((1 - var(--kb)) * 14px))}
 
-/* ---- the static hero (phones, portrait tablets, reduced motion) ---- */
-.static-hero{display:none}
+/* ---- phones and portrait tablets: same scrub, captions stacked under the watch ---- */
 @media (max-width:720px),
        (orientation:portrait) and (max-width:1024px),
-       (orientation:portrait) and (pointer:coarse),
-       (orientation:landscape) and (pointer:coarse) and (max-height:560px),
-       (prefers-reduced-motion:reduce){
+       (orientation:portrait) and (pointer:coarse){
+  .stage{height:100vh;height:100svh}
+  .stage video{transform:translateZ(0)}
+  .band,.band.settle{left:var(--gut);right:var(--gut);width:auto;
+    top:auto;bottom:clamp(2rem,8svh,4.5rem);transform:none}
+  .band h2,.band .h,.band.settle .h{font-size:clamp(1.9rem,1.2rem + 4vw,2.8rem)}
+  .band .kicker{margin-bottom:.8rem}
+  .band .sub{margin-top:.8rem}
+  .band .cta{margin-top:1.3rem}
+}
+
+/* ---- the static hero (reduced motion only) ---- */
+.static-hero{display:none}
+@media (prefers-reduced-motion:reduce){
   .hero{height:auto}
   .stage{display:none}
   .static-hero{display:block;position:relative;min-height:92vh;
@@ -1100,12 +1110,8 @@ function failVideo(){
   stage.classList.add('video-failed');
 }
 
-/* the five static hero gates, live in both directions */
+/* the static hero gate, live in both directions; phones scrub the light encode */
 var GATES = [
-  '(max-width: 720px)',
-  '(orientation: portrait) and (max-width: 1024px)',
-  '(orientation: portrait) and (pointer: coarse)',
-  '(orientation: landscape) and (pointer: coarse) and (max-height: 560px)',
   '(prefers-reduced-motion: reduce)'
 ];
 var MQLS = GATES.map(function(q){ return matchMedia(q); });
