@@ -579,6 +579,8 @@ var clamp=function(v,lo,hi){return Math.min(hi,Math.max(lo,v));};
 var smoothstep=function(p,e0,e1){var t=clamp((p-e0)/(e1-e0),0,1);return t*t*(3-2*t);};
 function rng(seed){var s=seed>>>0;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296;};}
 var RM=matchMedia('(prefers-reduced-motion: reduce)');
+/* phones and tablets get the lighter 540p/480p encodes */
+var SMALL=matchMedia('(max-width: 1024px), (pointer: coarse)');
 var $=function(id){return document.getElementById(id);};
 /* the data file is ours, not visitor input, so its HTML entities are meant to
    render. Anything that ever comes from a stranger must be escaped instead. */
@@ -1061,9 +1063,10 @@ function loadHeroBlob(){
   var watchdog = setTimeout(function(){ ctrl.abort(); }, S.watchdogMs);
   var opts = { signal: ctrl.signal };
   try { opts.priority = 'low'; } catch(e) {}
-  return fetch(A.heroVideo, opts).then(function(res){
+  var small = SMALL.matches && A.heroVideoMobile;
+  return fetch(small ? A.heroVideoMobile : A.heroVideo, opts).then(function(res){
     if (!res.ok || !res.body) throw new Error('no body');
-    var total = Number(res.headers.get('Content-Length')) || A.heroVideoBytes;
+    var total = Number(res.headers.get('Content-Length')) || (small ? A.heroVideoMobileBytes : A.heroVideoBytes);
     var reader = res.body.getReader(), chunks = [], got = 0, lastRing = 0;
     function pump(){
       return reader.read().then(function(r){
@@ -1158,7 +1161,7 @@ addEventListener('resize', function(){ if (scrubOn) onScroll(); }, {passive:true
   tp.style.backgroundImage = "url('" + A.turnPoster + "')";
   function load(){
     if (armed || RM.matches) return; armed = true;
-    fetch(A.turnVideo).then(function(r){ if (!r.ok) throw new Error('turn'); return r.blob(); })
+    fetch(SMALL.matches && A.turnVideoMobile || A.turnVideo).then(function(r){ if (!r.ok) throw new Error('turn'); return r.blob(); })
       .then(function(b){
         tv.src = URL.createObjectURL(b); tv.load();
         tv.addEventListener('canplay', function(){

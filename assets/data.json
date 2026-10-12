@@ -20,9 +20,12 @@
   "assets": {
     "heroVideo": "assets/hero-scrub.mp4",
     "heroVideoBytes": 12627681,
+    "heroVideoMobile": "assets/hero-scrub-m.mp4",
+    "heroVideoMobileBytes": 2615899,
     "heroPoster": "assets/hero-poster.jpg",
     "heroEnding": "assets/hero-ending.jpg",
     "turnVideo": "assets/turn.mp4",
+    "turnVideoMobile": "assets/turn-m.mp4",
     "turnPoster": "assets/turn-poster.jpg"
   },
 
